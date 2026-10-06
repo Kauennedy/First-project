@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kauennedy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+
+    <button class="lang-btn" id="lang-btn" type="button" aria-label="Mudar idioma / Change language">EN</button>
+  </header>
+
+  <main class="page">
+
+    <a href="#inicio" class="avatar" aria-label="Início">
+      <span class="avatar-fallback" aria-hidden="true"></span>
+      <img src="https://avatars.githubusercontent.com/u/113468015?v=4" alt="foto de perfil de Kauennedy" onerror="this.remove()">
+    </a>
+
+    <section class="hero" id="inicio">
+      <h1 data-i18n="hero_title">Olá, me chamo Kauennedy.</h1>
+      <p class="lead" data-i18n="hero_text">Sou um desenvolvedor de software iniciante e esse é o meu primeiro projeto.</p>
+    </section>
+
+    <section class="details">
+      <div class="block" id="sobre">
+        <h2 data-i18n="about_title"></h2>
+        <p data-i18n="about_p1"></p>
+        <p data-i18n="about_p2"></p>
+      </div>
+
+      <div class="block" id="interesses">
+        <h2 data-i18n="skills_title"></h2>
+        <ul class="list">
+          <li data-i18n="skill_1"></li>
+        </ul>
+      </div>
+
+      <div class="block" id="contato">
+        <h2 data-i18n="contact_title">Contato</h2>
+        <p class="contact-text" data-i18n="contact_text">Quer conversar? Me escreva:</p>
+        <a class="mail" href="mailto:seuemail@exemplo.com">Kauennedy@gmail.com</a>
+      </div>
+    </section>
+
+    <small class="footer" data-i18n="footer">© desenvolvido por Kauennedy com a ajuda do Claude AI</small>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
