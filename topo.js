@@ -8,34 +8,34 @@ const projects = [
   {
     url: "https://github.com/seu-usuario/seu-site",
     pt: {
-      title: "projeto 1",
-      description: "ainda não"
+      title: "Meu site pessoal",
+      description: "Meu primeiro projeto: este portfólio, feito com HTML, CSS e JavaScript."
     },
     en: {
-      title: "Project 1",
-      description: "not yet"
+      title: "My personal website",
+      description: "My first project: this portfolio, built with HTML, CSS and JavaScript."
     }
   },
   {
     url: "https://github.com/seu-usuario/projeto-2",
     pt: {
-      title: "projeto 2",
-      description: "ainda não"
+      title: "Nome do projeto 2",
+      description: "Descreva em uma frase o que esse projeto faz."
     },
     en: {
-      title: "Project 2",
-      description: "not yet"
+      title: "Project name 2",
+      description: "Describe in one sentence what this project does."
     }
   },
   {
     url: "https://github.com/seu-usuario/projeto-3",
     pt: {
-      title: "projeto 3",
-      description: "ainda não"
+      title: "Nome do projeto 3",
+      description: "Descreva em uma frase o que esse projeto faz."
     },
     en: {
-      title: "Project 3",
-      description: "not yet"
+      title: "Project name 3",
+      description: "Describe in one sentence what this project does."
     }
   }
 ];
@@ -89,12 +89,10 @@ function setMenu(open) {
   projectsBtn.setAttribute("aria-expanded", open);
 }
 
-projectsBtn.addEventListener("click", e => {
-  e.stopPropagation();
-  setMenu(projectsMenu.hidden);
-});
-document.addEventListener("click", e => {
-  if (!projectsMenu.hidden && !projectsMenu.contains(e.target)) setMenu(false);
+projectsBtn.addEventListener("click", () => setMenu(projectsMenu.hidden));
+document.addEventListener("pointerdown", e => {
+  const dentro = projectsMenu.contains(e.target) || projectsBtn.contains(e.target);
+  if (!projectsMenu.hidden && !dentro) setMenu(false);
 });
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && !projectsMenu.hidden) {
@@ -118,7 +116,12 @@ themeBtn.addEventListener("click", () => {
 
 /* ---------- Textos que dependem do idioma ---------- */
 function updateLabels() {
-  const t = translations[currentLang()];
+  const lang = currentLang();
+  const t = translations[lang];
+
+  /* O botão mostra o idioma ATUAL (sigla e bandeira); o clique continua trocando de idioma */
+  btn.innerHTML = `${flags[lang]}<span>${lang.toUpperCase()}</span>`;
+
   projectItems.forEach(({ p, title, desc }) => {
     title.textContent = p[currentLang()].title;
     desc.textContent = p[currentLang()].description;
