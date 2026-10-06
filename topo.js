@@ -7,33 +7,33 @@
 const projects = [
   {
     url: "https://github.com/seu-usuario/seu-site",
-    en: {
+    pt: {
       title: "projeto 1",
       description: "ainda não"
     },
-    pt: {
+    en: {
       title: "Project 1",
       description: "not yet"
     }
   },
   {
     url: "https://github.com/seu-usuario/projeto-2",
-    en: {
+    pt: {
       title: "projeto 2",
       description: "ainda não"
     },
-    pt: {
+    en: {
       title: "Project 2",
       description: "not yet"
     }
   },
   {
     url: "https://github.com/seu-usuario/projeto-3",
-    en: {
+    pt: {
       title: "projeto 3",
       description: "ainda não"
     },
-    pt: {
+    en: {
       title: "Project 3",
       description: "not yet"
     }
@@ -41,12 +41,12 @@ const projects = [
 ];
 
 /* ---------- Textos fixos do topo (somam-se ao script.js) ---------- */
-Object.assign(translations.en, {
+Object.assign(translations.pt, {
   nav_projects: "Projetos",
   theme_to_light: "Mudar para o tema claro",
   theme_to_dark: "Mudar para o tema escuro"
 });
-Object.assign(translations.pt, {
+Object.assign(translations.en, {
   nav_projects: "Projects",
   theme_to_light: "Switch to light theme",
   theme_to_dark: "Switch to dark theme"

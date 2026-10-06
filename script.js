@@ -1,5 +1,5 @@
 const translations = {
-  en: {
+  pt: {
     hero_title: "Olá, me chamo Kauennedy.",
     hero_text: "Sou um desenvolvedor de software iniciante e esse é o meu primeiro projeto.",
     about_title: "Sou um amante da tecnologia e da programação, e estou sempre em busca de aprender coisas novas.",
@@ -10,7 +10,7 @@ const translations = {
     contact_text: "Quer conversar? Me escreva:",
     footer: "© desenvolvido por Kauennedy com a ajuda do Claude AI"
   },
-  pt: {
+  en: {
     hero_title: "Hi, I'm Kauennedy.",
     hero_text: "I'm a beginner software developer and this is my first project.",
     about_title: "I'm a technology and programming enthusiast, always eager to learn new things.",
