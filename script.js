@@ -1,31 +1,31 @@
 const translations = {
   pt: {
-    hero_title: "Olá, me chamo Kauennedy.",
-    hero_text: "Sou um desenvolvedor de software iniciante e esse é o meu primeiro projeto.",
+    hero_title: "Olá, me chamo Kauennedy",
+    hero_text: "Sou um desenvolvedor de software iniciante.",
     about_title: "Sou um amante da tecnologia e da programação, e estou sempre em busca de aprender coisas novas.",
     about_p2: "No meu tempo livre, gosto de consumir conteúdo relacionado à tecnologia.",
-    skills_title: "No momento estou aprendendo a programar em JavaScript",
-    skill_1: "Sou uma pessoa determinada e curiosa, sempre buscando aprender coisas novas e me aprimorar.",
-    contact_title: "Contato",
+    skills_title: "No momento estou aprendendo a programar em JavaScript.",
+    skill_1: "Tem sido desafiador. Utilizo a IA no meu aprendizado, o que torna tudo mais prático e divertido.",
+    contact_title: "",
     contact_text: "Quer conversar? Me escreva:",
-    footer: "© desenvolvido por Kauennedy com a ajuda do Claude AI"
+    footer: "© desenvolvido por Kauennedy"
   },
   en: {
-    hero_title: "Hi, I'm Kauennedy.",
-    hero_text: "I'm a beginner software developer and this is my first project.",
+    hero_title: "Hi, I'm Kauennedy",
+    hero_text: "I'm a beginner software developer.",
     about_title: "I'm a technology and programming enthusiast, always eager to learn new things.",
     about_p2: "in my free time, I like to consume content related to technology.",
-    skills_title: "Currently learning to program in JavaScript",
-    skill_1: "I'm a determined and curious person, always seeking to learn new things and improve myself.",
-    contact_title: "Contact",
+    skills_title: "Currently learning to program in JavaScript.",
+    skill_1: "it's been challenging. I also use AI in my learning, which makes everything more practical and fun.",
+    contact_title: "",
     contact_text: "Want to talk? Write to me:",
-    footer: "© developed by Kauennedy with the help of Claude AI"
+    footer: "© developed by Kauennedy"
   }
 };
 
 const btn = document.getElementById("lang-btn");
 
-// Bandeiras em SVG (aparecem em qualquer sistema, ao contrário dos emojis)
+
 const stripes = Array.from({ length: 7 }, (_, i) =>
   `<rect y="${(i * 2 * 14 / 13).toFixed(2)}" width="20" height="${(14 / 13).toFixed(2)}" fill="#b22234"/>`
 ).join("");

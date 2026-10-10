@@ -4,22 +4,22 @@ const projects = [
     url: "https://kauennedy.github.io/First-project/",
     pt: {
       title: "Meu site pessoal",
-      description: "Meu primeiro projeto: este portfólio, feito com HTML, CSS e JavaScript."
+      description: "Este portfólio, feito com HTML, CSS e JavaScript."
     },
     en: {
       title: "My personal website",
-      description: "My first project: this portfolio, built with HTML, CSS and JavaScript."
+      description: "This portfolio, built with HTML, CSS and JavaScript."
     }
   },
   {
     url: "https://kauennedy.github.io/Padaria/",
     pt: {
       title: "Padaria",
-      description: "site básico de uma padaria"
+      description: "Site básico de uma padaria, feito em com HTML e CSS"
     },
     en: {
-      title: "bakery",
-      description: "basic bakery website"
+      title: "Bakery",
+      description: "Basic bakery website, made with HTML and CSS"
     }
   },
   {
