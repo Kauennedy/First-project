@@ -1,7 +1,7 @@
 
 const projects = [
   {
-    url: "https://kauennedy.github.io/First-project/",
+    url: "https://kauennedy.github.io/Site-Pessoal/",
     pt: {
       title: "Meu site pessoal",
       description: "Este portfólio, feito com HTML, CSS e JavaScript."
