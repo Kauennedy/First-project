@@ -1,12 +1,7 @@
-/* =========================================================
-   SEUS PROJETOS — edite apenas esta lista
-   Para adicionar um projeto, copie um bloco { ... } e cole
-   depois da vírgula. Troque o link (url) e os textos em
-   português (pt) e inglês (en).
-   ========================================================= */
+
 const projects = [
   {
-    url: "https://github.com/seu-usuario/seu-site",
+    url: "https://kauennedy.github.io/First-project/",
     pt: {
       title: "Meu site pessoal",
       description: "Meu primeiro projeto: este portfólio, feito com HTML, CSS e JavaScript."
@@ -17,30 +12,30 @@ const projects = [
     }
   },
   {
-    url: "https://github.com/seu-usuario/projeto-2",
+    url: "https://kauennedy.github.io/Padaria/",
     pt: {
-      title: "Nome do projeto 2",
-      description: "Descreva em uma frase o que esse projeto faz."
+      title: "Padaria",
+      description: "site básico de uma padaria"
     },
     en: {
-      title: "Project name 2",
-      description: "Describe in one sentence what this project does."
+      title: "bakery",
+      description: "basic bakery website"
     }
   },
   {
     url: "https://github.com/seu-usuario/projeto-3",
     pt: {
-      title: "Nome do projeto 3",
-      description: "Descreva em uma frase o que esse projeto faz."
+      title: "projeto 3",
+      description: "."
     },
     en: {
-      title: "Project name 3",
-      description: "Describe in one sentence what this project does."
+      title: "Project 3",
+      description: "."
     }
   }
 ];
 
-/* ---------- Textos fixos do topo (somam-se ao script.js) ---------- */
+
 Object.assign(translations.pt, {
   nav_projects: "Projetos",
   theme_to_light: "Mudar para o tema claro",
